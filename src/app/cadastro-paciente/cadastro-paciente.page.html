@@ -1,10 +1,17 @@
 <ion-content>
   <div class="login-section ion-padding">
     <div class="heading ion-padding">
-      <h1>Login de paciente</h1>
-      <p>Faça o login para continuar</p>
+      <h1>Cadastro de Paciente</h1>
+      <p>Faça o cadastro para acessar sua conta</p>
     </div>
     <div class="login-form ion-padding">
+      <div class="form-input">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-item>
+          <ion-label position="floating">Nome</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </div>
       <div class="form-input">
         <ion-icon name="mail-outline"></ion-icon>
         <ion-item>
@@ -20,9 +27,9 @@
         </ion-item>
       </div>
       <div class="action-buttons ion-padding">
-        <ion-button size="large" class="login-button">Logar</ion-button>
-        <ion-button size="large" class="sigup-button" fill="outline" routerLink="/cadastro-paciente">Cadastra-se</ion-button>
-        <p>Caso não tenha cadastro</p>
+        <ion-button size="large" class="login-button">Cadastrar</ion-button>
+        <ion-button size="large" class="sigup-button" fill="outline" routerLink="/login">Login</ion-button>
+        <p>Caso já possua cadastro</p>
       </div>
     </div>
   </div>

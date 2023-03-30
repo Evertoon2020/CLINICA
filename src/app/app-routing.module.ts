@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path: 'servicos-clinica',
     loadChildren: () => import('./servicos-clinica/servicos-clinica.module').then( m => m.ServicosClinicaPageModule)
+  },
+  {
+    path: 'cadastro-paciente',
+    loadChildren: () => import('./cadastro-paciente/cadastro-paciente.module').then( m => m.CadastroPacientePageModule)
   },
 ];
 
