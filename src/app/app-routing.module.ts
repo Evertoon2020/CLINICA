@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'welcome',
     pathMatch: 'full'
   },
   {
@@ -35,6 +35,15 @@ const routes: Routes = [
     path: 'cadastro-paciente',
     loadChildren: () => import('./cadastro-paciente/cadastro-paciente.module').then( m => m.CadastroPacientePageModule)
   },
+  {
+    path: 'welcome',
+    loadChildren: () => import('./welcome/welcome.module').then( m => m.WelcomePageModule)
+  },  {
+    path: 'paciente',
+    loadChildren: () => import('./paciente/paciente.module').then( m => m.PacientePageModule)
+  },
+
+
 ];
 
 @NgModule({

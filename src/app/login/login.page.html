@@ -1,29 +1,26 @@
-<ion-content>
-  <div class="login-section ion-padding">
-    <div class="heading ion-padding">
-      <h1>Login de paciente</h1>
-      <p>Faça o login para continuar</p>
-    </div>
-    <div class="login-form ion-padding">
-      <div class="form-input">
-        <ion-icon name="mail-outline"></ion-icon>
-        <ion-item>
-          <ion-label position="floating">E-mail</ion-label>
-          <ion-input type="email"></ion-input>
-        </ion-item>
-      </div>
-      <div class="form-input">
-        <ion-icon name="lock-closed-outline"></ion-icon>
-        <ion-item>
-          <ion-label position="floating">Senha</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-      </div>
-      <div class="action-buttons ion-padding">
-        <ion-button size="large" class="login-button">Logar</ion-button>
-        <ion-button size="large" class="sigup-button" fill="outline" routerLink="/cadastro-paciente">Cadastra-se</ion-button>
-        <p>Caso não tenha cadastro</p>
-      </div>
-    </div>
+<ion-header>
+
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="title">
+    <h4>Login</h4>
+    <p>Faça o login para acessar os serviços do paciente</p>
+  </div>
+
+  <ion-input placeholder="E-mail" class="primary-input"></ion-input>
+  <ion-input placeholder="Senha" type="password" class="primary-input"></ion-input>
+
+  <div class="ion-margin-top ion-text-right forget">
+    <a>Esqueceu a Senha?</a>
+  </div>
+
+  <div class="ion-margin-top">
+    <ion-button expand="block">LOGIN</ion-button>
+    <!-- (click)="login()" -->
+  </div>
+
+  <div class="ion-margin-top ion-text-center">
+    <a (click)="dismiss()">Fechar</a>
   </div>
 </ion-content>

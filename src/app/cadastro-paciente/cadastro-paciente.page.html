@@ -1,36 +1,34 @@
-<ion-content>
-  <div class="login-section ion-padding">
-    <div class="heading ion-padding">
-      <h1>Cadastro de Paciente</h1>
-      <p>Faça o cadastro para acessar sua conta</p>
-    </div>
-    <div class="login-form ion-padding">
-      <div class="form-input">
-        <ion-icon name="person-outline"></ion-icon>
-        <ion-item>
-          <ion-label position="floating">Nome</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      </div>
-      <div class="form-input">
-        <ion-icon name="mail-outline"></ion-icon>
-        <ion-item>
-          <ion-label position="floating">E-mail</ion-label>
-          <ion-input type="email"></ion-input>
-        </ion-item>
-      </div>
-      <div class="form-input">
-        <ion-icon name="lock-closed-outline"></ion-icon>
-        <ion-item>
-          <ion-label position="floating">Senha</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-      </div>
-      <div class="action-buttons ion-padding">
-        <ion-button size="large" class="login-button">Cadastrar</ion-button>
-        <ion-button size="large" class="sigup-button" fill="outline" routerLink="/login">Login</ion-button>
-        <p>Caso já possua cadastro</p>
-      </div>
-    </div>
+<ion-header>
+
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="title">
+    <h4>Cadastro</h4>
+    <p>Registre-se na Clínica La Vida para possuir acessso aos serviços do paciente</p>
+  </div>
+
+  <ion-input placeholder="Nome Completo" class="primary-input"></ion-input>
+  <ion-input placeholder="E-mail" class="primary-input"></ion-input>
+  <ion-input placeholder="Senha" type="password" class="primary-input"></ion-input>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="auto" size-md="2" size-lg="2">
+          <ion-checkbox></ion-checkbox>
+        </ion-col>
+        <ion-col size="10" size-md="10" size-lg="10">
+          <p>Ao se cadastrar, você concorda com nossos <a class="termos" href="">Termos e Condições</a></p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  <div class="ion-margin-top">
+    <ion-button expand="block">CADASTRAR</ion-button>
+    <!-- (click)="register()" -->
+  </div>
+
+  <div class="ion-margin-top ion-text-center">
+    <a (click)="dismiss()">Fechar</a>
   </div>
 </ion-content>

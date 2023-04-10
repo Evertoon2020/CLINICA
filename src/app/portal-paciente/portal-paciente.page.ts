@@ -12,4 +12,5 @@ export class PortalPacientePage implements OnInit {
   ngOnInit() {
   }
 
+
 }
