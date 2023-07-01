@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Random User</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-button (click)="verifica()">Solicitar dados fictícios</ion-button>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Sexo</ion-label>
+        <ion-input [(ngModel)]="results.gender" label="CEP" type="text" placeholder="Sexo" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Primeiro Nome</ion-label>
+        <ion-input [(ngModel)]="results.firstname" label="Endereco" type="text" placeholder="Primeiro Nome" disabled></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Ultimo Nome</ion-label>
+        <ion-input [(ngModel)]="results.lastname" label="Bairro" type="text" placeholder="Ultimo Nome" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Endereço</ion-label>
+        <ion-input [(ngModel)]="results.streetname" label="Cidade" type="text" placeholder="Endereço" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Número</ion-label>
+        <ion-input [(ngModel)]="results.streetnumber" label="UF" type="text" placeholder="Número" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Cidade</ion-label>
+        <ion-input [(ngModel)]="results.city" label="UF" type="text" placeholder="Cidade" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Estado</ion-label>
+        <ion-input [(ngModel)]="results.state" label="UF" type="text" placeholder="Estado" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">País</ion-label>
+        <ion-input [(ngModel)]="results.country" label="UF" type="text" placeholder="País" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">CEP</ion-label>
+        <ion-input [(ngModel)]="results.postcode" label="UF" type="text" placeholder="CEP" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-input [(ngModel)]="results.email" label="UF" type="text" placeholder="E-mail" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Login</ion-label>
+        <ion-input [(ngModel)]="results.username" label="UF" type="text" placeholder="Login" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input [(ngModel)]="results.password" label="UF" type="text" placeholder="Senha" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Data de Nascimento</ion-label>
+        <ion-input [(ngModel)]="results.date" label="UF" type="text" placeholder="Data de Nascimento" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Celular</ion-label>
+        <ion-input [(ngModel)]="results.cell" label="UF" type="text" placeholder="Celular" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Foto</ion-label>
+        <img alt="Foto Perfil" [src]="this.results.picture"/>
+      </ion-item>
+
+      <br><br><br>
+
+    </ion-list>
+  </ion-list>
+  <br><br><br>
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Buscar endereço por CEP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-input  (keyup)="verifica()" [(ngModel)]="cep.cep" label="CEP" type="text" placeholder="CEP"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input [(ngModel)]="cep.logradouro" label="Endereco" type="text" placeholder="Endereço" disabled></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input [(ngModel)]="cep.bairro" label="Bairro" type="text" placeholder="Bairro" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input [(ngModel)]="cep.localidade" label="Cidade" type="text" placeholder="Cidade" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input [(ngModel)]="cep.uf" label="UF" type="text" placeholder="UF" disabled></ion-input>
+      </ion-item>
+
+    </ion-list>
+  </ion-list>
+</ion-content>
