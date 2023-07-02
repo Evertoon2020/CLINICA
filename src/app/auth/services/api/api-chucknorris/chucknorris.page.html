@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Api Chucknorris</ion-title>
+    <ion-buttons slot="end">
+      <ion-button href="./portal-paciente"><ion-icon name="exit-outline"></ion-icon></ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <br>
@@ -10,7 +13,7 @@
   <ion-list-header>Solicite uma piadas engraçadas sobre Chuck Norris </ion-list-header>
 
   <ion-item>
-    <ion-button (click)="verifica()">Solicitar</ion-button>
+    <ion-button expand="block" color="primary" (click)="verifica()">Solicitar</ion-button>
   </ion-item>
 
   <ion-card *ngIf="ocultar">

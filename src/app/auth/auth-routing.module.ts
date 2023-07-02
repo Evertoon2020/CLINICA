@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'camera',
     pathMatch: 'full'
   },
   {
@@ -38,6 +38,14 @@ const routes: Routes = [
   {
     path: 'page-component',
     loadChildren: () => import('./pages/page-component/page-component.module').then( m => m.PageComponentPageModule)
+  },
+  {
+    path: 'camera',
+    loadChildren: () => import('./capacitores/camera/camera.module').then( m => m.CameraPageModule)
+  },
+  {
+    path: 'local-notification',
+    loadChildren: () => import('./capacitores/local-notification/local-notification.module').then( m => m.LocalNotificationPageModule)
   }
 ];
 

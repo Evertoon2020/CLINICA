@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { LoginPage } from '../login/login.page';
 
 @Component({
   selector: 'app-cadastro-paciente',
@@ -17,4 +18,16 @@ export class CadastroPacientePage implements OnInit {
     return await this.modalCtrl.dismiss();
   }
   
+  async login() {
+    const modal = await this.modalCtrl.create({
+      component: LoginPage,
+      animated: true,
+      mode: 'ios',
+      backdropDismiss: false,
+      cssClass: 'login-modal',
+    })
+
+    return await modal.present();
+  }
+
 }

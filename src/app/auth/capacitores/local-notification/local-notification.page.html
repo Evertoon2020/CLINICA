@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Plugin Notificação</ion-title>
+    <ion-buttons slot="end">
+      <ion-button href="./portal-paciente"><ion-icon name="exit-outline"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <h4>Ative sua notificação para receber o alerta</h4>
+
+  <div id="container">
+
+    <ion-button expand="block"  color="secondary" (click)="notificar()">Receber notificação</ion-button>
+
+  </div>
+
+</ion-content>

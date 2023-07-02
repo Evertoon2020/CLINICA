@@ -7,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortalPacientePage implements OnInit {
 
+  isModalOpen = false;
+  isModalOpen2 = false;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  setOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
+  }
+
+  setOpen2(isOpen2: boolean) {
+    this.isModalOpen2 = isOpen2;
+  }
 
 }
