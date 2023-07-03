@@ -14,3 +14,9 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 
   // Call the element loader after the platform has been bootstrapped
 defineCustomElements(window);
+
+platformBrowserDynamic().bootstrapModule(AppModule).then(() => {
+  if ('serviceWorker' in navigator && environment.production) {
+    navigator.serviceWorker.register('/ngsw-worker.js');
+  }
+}).catch(err => console.log(err));
